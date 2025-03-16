@@ -1,5 +1,11 @@
+// ============================
+//  Amigo Secreto - Lógica en JavaScript
+// ============================
+
+// Array para almacenar los nombres de los amigos
 let amigos = [];
 
+// Función para agregar un amigo a la lista
 function agregarAmigo() {
     let input = document.getElementById("amigo");
     let nombre = input.value.trim(); 
@@ -16,6 +22,7 @@ function agregarAmigo() {
     actualizarListaAmigos();
 }
 
+// Función para actualizar la lista de amigos en pantalla
 function actualizarListaAmigos() {
 
     let lista = document.getElementById("listaAmigos");
@@ -29,6 +36,7 @@ function actualizarListaAmigos() {
     }
 }
 
+// Función para sortear un amigo secreto
 function sortearAmigo() {
     if (amigos.length === 0) {
         alert("La lista está vacía. Agrega al menos un amigo antes de sortear.");
